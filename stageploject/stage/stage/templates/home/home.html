@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for b in homes %}
+    <h1>{{b.title}}</h1>
+ <img src="{{b.image.url }}" alt="" class="img-fluid" width="400">
+<b> {{b.descrption}}</b>
+    {% endfor %}
+{% endblock %}
+

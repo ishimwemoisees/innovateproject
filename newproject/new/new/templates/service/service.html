@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    {% for b in data %}
+    <h1>{{b.title}}</h1>
+    <p>{{b.descrption}}</p>
+
+    {% endfor %}
+{% endblock%}

@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block content%}
+<form  method='POST'> {% csrf_token %}
+ {{ moise.as_p}}
+    <input type="submit" value="save"/>
+
+</form>
+
+{% for a in x %}
+<h1>{{ a.title }}</h1>
+<p> {{ a.description }}</p>
+    {{ a.price }}
+{% endfor %}
+
+{% endblock %}

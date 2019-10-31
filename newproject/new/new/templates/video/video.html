@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   {% for c in y %}
+   <h1>{{c.title }}</h1>
+   <p>{{ c.description }}</p>
+  <p >{{c.uploaddata}}</p>
+   {% endfor %}
+{% endblock %}

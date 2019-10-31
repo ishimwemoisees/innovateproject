@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p> mwaramutse neza
+amakuru yanyu
+imana ibahe umugisha
+</p>
+<p>1.shutdown/s:for shutting down computer 2.shutdown/s:for restarting computer
+ 3.pd for user in pg admin is "07850118"
+ 4.pd to connect server in pg admin is "0785011856" 5.username for blogproject is "moise" 6.pw:"123456789"
+ 7.https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html
+</p>
+
+<p align="center" >
+ {{title }}, {{ my_number }}
+ {{my_list}}
+<h1>{{title|capfirst|upper}}</h1>
+{{ my_html|safe}}
+ <ul>
+  <li>item1</li>
+  <li>item2</li>
+</ul>
+<ul>
+{% for abc in my_list%}
+ {% if abc == 789 %}
+ <li> {{ forloop.counter}}-{{ abc|add:22 }}</li>
+ {% elif abc == "abc" %}
+ <li>this is a network</li>
+ {% else %}
+ <li> {{ forloop.counter}}-{{ abc }}</li>
+ {% endif %}
+{% endfor%}
+
+</ul>
+
+</p>
+
+{% endblock %}
+
